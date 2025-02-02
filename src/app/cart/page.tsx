@@ -71,7 +71,7 @@ export default function CartPage() {
     const totalPrice = cartItems.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
 
     return (
-        <div className="max-w-[1440px] mx-auto overflow-hidden">
+        <div className="max-w-[1440px] bg-white mx-auto overflow-hidden">
             <div>
                 <Image
                     src={"/images/cart-img.png"}
@@ -84,7 +84,7 @@ export default function CartPage() {
 
             <div className="flex flex-col custom:flex-row justify-between items-start lg:items-center custom:items-start mx-4 lg:mx-[100px] my-[56px] gap-8 lg:gap-0">
                 <div className="flex flex-col justify-start items-center gap-[56px] w-full lg:w-auto">
-                    <div className="w-full hidden lg:w-[817px] h-[55px] bg-[#F9F1E7] rounded-lg md:flex justify-between items-center px-[30px]">
+                    <div className="w-full hidden lg:w-[817px] h-[55px] bg-[#F9F1E7] text-black rounded-lg md:flex justify-between items-center px-[30px]">
                         <h1 className="font-[500] text-[16px] leading-6">Product</h1>
                         <h1 className="font-[500] text-[16px] leading-6">Price</h1>
                         <h1 className="font-[500] text-[16px] leading-6">Quantity</h1>
@@ -102,14 +102,14 @@ export default function CartPage() {
                                     </div>
 
                                 </div>
-                                <h1 className="font-[500] text-[16px] leading-6 text-[#9F9F9F]">Rs. {item.product.price}</h1>
+                                <h1 className="font-[500] text-[16px] leading-6 text-black">Rs. {item.product.price}</h1>
 
                                 {/* Quantity input */}
                                 <input
                                     type="number"
                                     value={item.quantity}
                                     onChange={(e) => updateQuantity(item.product._id, parseInt(e.target.value))}
-                                    className="w-[60px] h-[30px] text-center border border-gray-300 px-3 py-6 rounded"
+                                    className="w-[60px] h-[30px] text-center text-black border border-gray-300 px-3 py-6 rounded"
                                 />
 
                                 <button onClick={() => removeFromCart(item.product._id)}>
@@ -121,7 +121,7 @@ export default function CartPage() {
                         <div className="flex flex-col justify-center items-center w-full h-64 bg-[#F9F1E7] rounded-lg border-2 border-dashed border-[#B88E2F] mt-20 mb-24 shadow-lg">
                             <RiDeleteBinLine className="text-[#B88E2F] scale-150 mb-4" />
                             <h1 className="font-semibold text-3xl text-[#B88E2F]">Your Cart is Empty</h1>
-                            <p className="text-center text-[#9F9F9F] mt-3">It appears you haven&#39;t added anything to your cart yet. Explore our collection and find what you love!</p>
+                            <p className="text-center text-gray-800 mt-3">It appears you haven&#39;t added anything to your cart yet. Explore our collection and find what you love!</p>
                             <Link href="/shop" className="mt-6 px-8 py-3 border-2 border-[#B88E2F] text-[#B88E2F] rounded-full font-medium text-lg hover:bg-[#B88E2F] hover:text-white transition-all duration-300 ease-in-out">
                                 Start Shopping
                             </Link>
@@ -134,14 +134,14 @@ export default function CartPage() {
                     <h1 className="font-[600] text-[32px] leading-[48px] text-black text-center">Cart Totals</h1>
                     <div className="flex justify-between items-center gap-[20px] lg:gap-[50px] mt-[56px] w-full">
                         <h1 className="font-[500] text-[16px] text-black">Subtotal</h1>
-                        <h1 className="font-[500] text-[16px] text-[#9F9F9F]">Rs. {totalPrice}</h1>
+                        <h1 className="font-[500] text-[16px] text-black">Rs. {totalPrice}</h1>
                     </div>
                     <div className="flex justify-between items-center gap-[20px] lg:gap-[50px] mt-[26px] w-full">
                         <h1 className="font-[500] text-[16px] text-black">Total</h1>
-                        <h1 className="font-[500] text-[20px] text-[#B88E2F]">Rs. {totalPrice}</h1>
+                        <h1 className="font-[500] text-[20px] text-black">Rs. {totalPrice}</h1>
                     </div>
                     <Link href="/checkout">
-                        <button className="w-[222px] h-[58.95px] border border-black rounded-[15px] mt-[50px] hover:bg-black hover:text-white ease-in-out duration-300">
+                        <button className="w-[222px] h-[58.95px] text-black border border-black rounded-[15px] mt-[50px] hover:bg-black hover:text-white ease-in-out duration-300">
                             Check Out
                         </button>
                     </Link>

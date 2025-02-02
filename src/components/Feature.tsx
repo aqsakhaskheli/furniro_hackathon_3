@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Feature = () => {
     return (
-        <div className="h-auto lg:h-[270px] bg-[#F9F1E7] mt-8 lg:mt-16 flex flex-col lg:flex-row items-center justify-evenly gap-6 lg:gap-0 px-4">
+        <div className="h-auto lg:h-[270px] bg-[#F9F1E7] text-black mt-8 lg:mt-16 flex flex-col lg:flex-row items-center justify-evenly gap-6 lg:gap-0 px-4">
             {[
                 {
                     img: '/images/trophy.svg',
@@ -41,7 +41,7 @@ const Feature = () => {
                         <h3 className="font-bold text-[16px] md:text-[18px] lg:text-[20px] xl:text-[25px]">
                             {feature.title}
                         </h3>
-                        <p className="text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-gray-600">
+                        <p className="text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-black">
                             {feature.desc}
                         </p>
                     </div>

@@ -23,16 +23,16 @@ const Navbar = () => {
       </div>
 
       <div className="hidden md:flex space-x-6 text-gray-800 text-sm">
-        <Link href={"/"} className="hover:text-gray-500 transition">
+        <Link href={"/"} className="hover:text-gray-800 transition">
           Home
         </Link>
-        <Link href={"/shop"} className="hover:text-gray-500 transition">
+        <Link href={"/shop"} className="hover:text-gray-800 transition">
           Shop
         </Link>
-        <Link href={"/blog"} className="hover:text-gray-500 transition">
+        <Link href={"/blog"} className="hover:text-gray-800 transition">
           Blog
         </Link>
-        <Link href={"/contact"} className="hover:text-gray-500 transition">
+        <Link href={"/contact"} className="hover:text-gray-800 transition">
           Contact
         </Link>
       </div>
@@ -109,17 +109,17 @@ const Navbar = () => {
 
       {/* Mobile Menu with Slide-in Animation */}
       {menuOpen && (
-        <div className="absolute top-[80px] left-0 w-full bg-white shadow-md md:hidden flex flex-col space-y-4 p-4 items-center transition-transform transform duration-300 ease-in-out translate-x-0">
-          <Link href={"/"} className="hover:text-gray-500 transition">
+        <div className="absolute top-[80px] text-gray-800 text-bold left-0 w-full bg-white shadow-md md:hidden flex flex-col space-y-4 p-4 items-center transition-transform transform duration-300 ease-in-out translate-x-0">
+          <Link href={"/"} className="hover:text-gray-600 transition">
             Home
           </Link>
-          <Link href={"/shop"} className="hover:text-gray-500 transition">
+          <Link href={"/shop"} className="hover:text-gray-600 transition">
             Shop
           </Link>
-          <Link href={"/blog"} className="hover:text-gray-500 transition">
+          <Link href={"/blog"} className="hover:text-gray-600 transition">
             Blog
           </Link>
-          <Link href={"/contact"} className="hover:text-gray-500 transition">
+          <Link href={"/contact"} className="hover:text-gray-600 transition">
             Contact
           </Link>
         </div>

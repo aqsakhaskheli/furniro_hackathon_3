@@ -60,7 +60,7 @@ const ShopPage = () => {
       </div>
 
       {/* Filters Section */}
-      <div className="h-auto bg-[#F9F1E7] flex flex-col sm:flex-row items-center justify-between p-2 sm:p-4">
+      <div className="h-auto bg-white flex flex-col sm:flex-row items-center justify-between p-2 sm:p-4">
                 <div className="flex flex-wrap items-center justify-center sm:justify-evenly space-x-4 sm:space-x-8 w-full">
                     <Image
                         src="/images/dotted-line.svg"
@@ -68,7 +68,7 @@ const ShopPage = () => {
                         width={25}
                         height={25}
                     />
-                    <h3 className="text-[14px] sm:text-[18px] md:text-[20px] font-semibold">Filter</h3>
+                    <h3 className="text-[14px] sm:text-[18px] text-black md:text-[20px] font-semibold">Filter</h3>
                     <Image
                         src="/images/four-dot.svg"
                         alt="four-dot"
@@ -83,17 +83,17 @@ const ShopPage = () => {
                     />
                 </div>
                 <div className="flex flex-wrap items-center justify-between sm:space-x-4 mt-2 sm:mt-0 w-full">
-                    <span className="text-xs sm:text-sm md:text-base">Showing 1–16 of 32 results</span>
-                    <span className="text-xs sm:text-sm md:text-base">Show</span>
+                    <span className="text-xs sm:text-sm text-black md:text-base">Showing 1–16 of 32 results</span>
+                    <span className="text-xs text-black sm:text-sm md:text-base">Show</span>
 
                     <div className="w-[45px] sm:w-[55px] h-[45px] sm:h-[55px] bg-white flex items-center justify-center ">
-                        <h3 className="text-[#9F9F9F] text-xs sm:text-sm md:text-base">16</h3>
+                        <h3 className="text-black text-xs sm:text-sm md:text-base">16</h3>
                     </div>
 
-                    <span className="text-xs sm:text-sm md:text-base">Short by</span>
+                    <span className="text-xs text-black sm:text-sm md:text-base">Short by</span>
 
                     <div className="w-[45px] sm:w-[55px] h-[45px] sm:h-[55px] bg-white flex items-center justify-center ">
-                        <h3 className="text-[#9F9F9F] text-xs sm:text-sm md:text-base">Default</h3>
+                        <h3 className="text-black text-xs sm:text-sm md:text-base">Default</h3>
                     </div>
                 </div>
             </div>

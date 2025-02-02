@@ -5,6 +5,7 @@ const HeroSection = () => {
     return (
         <>
             <div>
+                
                 <Image
                     src={"/images/hero-sec.png"}
                     alt="hero-section"
@@ -12,6 +13,7 @@ const HeroSection = () => {
                     height={316}
                     className="w-full h-auto mt-20"
                 />
+                
             </div>
             <h1 className='text-[32px] font-bold text-center mt-10'>Browse The Range</h1>
             <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
